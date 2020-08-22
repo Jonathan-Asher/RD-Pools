@@ -1,0 +1,54 @@
+@import '../../styles/partials/variables';
+
+.navbar {
+  .navbar-brand {
+    margin-left: 16px;
+  }
+
+  ul.mr-auto {
+    padding-right: 0;
+  }
+
+  li:first-child {
+    margin-left: 16px;
+  }
+}
+
+.Navbar {
+
+  margin: 0;
+  padding: 0;
+  
+  background-color: $navbar-teal;
+  opacity: 70%;
+
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  ul {
+    margin: 0 10px 0 0;
+    list-style-type: none;
+  }
+
+  li {
+    display: block;
+    float: right;
+    background-color: $navbar-teal;
+    border-radius: 1px;
+    font-size: $navbar-font-size;
+    &:hover {
+      cursor: pointer;
+      background-color: $navbar-teal-hover;
+    }
+  }
+
+  a {
+    display: block;
+    padding: $navbar-option-padding;
+    color: $navbar-text;
+    text-decoration: none;
+  }
+  
+}
